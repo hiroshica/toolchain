@@ -22,7 +22,7 @@ export PATH="/opt/gcw0-toolchain/usr/bin:${PATH}:/opt/gcw0-toolchain/usr/mipsel-
 
 ## Enter the directory where you want to clone the git repo
 $ make rg350_defconfig
-sed -ie 's%^BR2_HOST_DIR=.*$%BR2_HOST_DIR="/opt/gcw0-toolchain"%' .config
+$ sed -ie 's%^BR2_HOST_DIR=.*$%BR2_HOST_DIR="/opt/gcw0-toolchain"%' .config
 $ make toolchain
 $ make sdl sdl_image
 
