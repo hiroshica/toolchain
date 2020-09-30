@@ -20,6 +20,8 @@ echo "Starting build..."
 make rg350_defconfig
 sed -ie 's%^BR2_HOST_DIR=.*$%BR2_HOST_DIR="/opt/gcw0-toolchain"%' .config
 # Clear the install location.
-rm -rf /opt/gcw0-toolchain/* /opt/rg350-toolchain
+rm -rf /opt/gcw0-toolchain /opt/rg350-toolchain
 make toolchain -j7
 make sdl sdl_image
+#
+ln -s /opt/gcw0-toolchain/ /opt/rg350-toolchain
