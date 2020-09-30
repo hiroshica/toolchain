@@ -21,10 +21,11 @@ export PATH="/opt/gcw0-toolchain/usr/bin:${PATH}:/opt/gcw0-toolchain/usr/mipsel-
 ### Build Steps ###
 
 ## Enter the directory where you want to clone the git repo
-$ git clone https://github.com/Ninoh-FOX/toolchain.git
-$ cd toolchain
 $ make rg350_defconfig
-$ make
+$ sed -ie 's%^BR2_HOST_DIR=.*$%BR2_HOST_DIR="/opt/gcw0-toolchain"%' .config
+$ make toolchain
+$ make sdl sdl_image
+
 
 ======================================================
 
