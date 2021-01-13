@@ -1,8 +1,6 @@
-diff --git a/src/pcm/pcm_hw.c b/src/pcm/pcm_hw.c
-index 9d243d5..a75d161 100644
---- a/src/pcm/pcm_hw.c
-+++ b/src/pcm/pcm_hw.c
-@@ -706,6 +706,7 @@ static int snd_pcm_hw_resume(snd_pcm_t *pcm)
+--- a/src/pcm/pcm_hw.c	2020-10-19 11:45:13.000000000 +0200
++++ b/src/pcm/pcm_hw.c	2021-01-08 23:36:09.801155204 +0100
+@@ -801,6 +801,7 @@
  	int fd = hw->fd, err;
  	if (ioctl(fd, SNDRV_PCM_IOCTL_RESUME) < 0) {
  		err = -errno;

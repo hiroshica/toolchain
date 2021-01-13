@@ -1,11 +1,11 @@
 #############################################################
 #
-# love2d aeefcc6 >> 6257287
+# love2d aeefcc6 >> 6257287 >> 6fa5edf
 #
 #############################################################
-LOVE2D_VERSION = 6257287
-LOVE2D_SITE = https://bitbucket.org/bartbes/love-experiments
-LOVE2D_SITE_METHOD = hg
+LOVE2D_VERSION = 0.10.0
+LOVE2D_SOURCE = $(LOVE2D_VERSION).tar.gz
+LOVE2D_SITE = https://github.com/love2d/love/archive
 LOVE2D_LICENSE = unknown
 LOVE2D_LICENSE_FILES = license.txt
 
